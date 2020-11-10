@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Гелиевые воздушные шары</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01"></div>
+        <div class="f_circleG" id="frotateG_02"></div>
+        <div class="f_circleG" id="frotateG_03"></div>
+        <div class="f_circleG" id="frotateG_04"></div>
+        <div class="f_circleG" id="frotateG_05"></div>
+        <div class="f_circleG" id="frotateG_06"></div>
+        <div class="f_circleG" id="frotateG_07"></div>
+        <div class="f_circleG" id="frotateG_08"></div>
+      </div>
+    </div>
+  </body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-mobile">
+        <div class="header-mobile__left">
+          <div class="header-mobile__hamburger">
+            <div class="sandwich">
+              <div class="sandwich__line sandwich__line--top"></div>
+              <div class="sandwich__line sandwich__line--middle"></div>
+              <div class="sandwich__line sandwich__line--bottom"> </div>
+            </div>
+            <div class="header-mobile__content">
+              <div class="header-mobile__search search">
+                <form class="search__form">
+                  <input class="search__input" placeholder="Поиск" type="text">
+                  <div class="search__btn search__clear">
+                    <svg class="svg-sprite-icon icon-close search__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                  </div>
+                  <button class="search__btn" type="submit">
+                    <svg class="svg-sprite-icon icon-search search__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <nav class="header-mobile__nav">                        
+                <ul class="header-mobile__list">
+                  <li class="header-mobile__item">
+                    <div class="header-mobile__link"><span>Каталог </span>
+                      <svg class="svg-sprite-icon icon-arrow-down header-bottom__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="mobile-menu">
+                      <ul class="mobile-menu__list">
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">День рождения</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">14 февраля</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">8 марта</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">23 февраля</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">9 мая</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Выпускной</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Свадьба</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Открытие кафе, магазина</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Выписка из роддома</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Новый год</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Гелиевые воздушные шары</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Фольгированные шары</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Букеты из воздушных шаров</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Крафтовые букеты из шаров</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Светящиеся шары</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Фигуры из воздушных шаров</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Цифры, буквы и слова из шаров</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Печать на шарах</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Оформление сцены</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Оформление презентаций и выставок</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Украшение машин</a></li>
+                                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Клоун на день рождения</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                        <li class="header-mobile__item"><a class="header-mobile__link" href="delivery.html"><span>Доставка</span></a></li>
+                        <li class="header-mobile__item"><a class="header-mobile__link" href="reviews.html"><span>Отзывы</span></a></li>
+                        <li class="header-mobile__item"><a class="header-mobile__link" href="how-to-order.html"><span>Как заказать</span></a></li>
+                        <li class="header-mobile__item"><a class="header-mobile__link" href="payment.html"><span>Способ оплаты</span></a></li>
+                        <li class="header-mobile__item"><a class="header-mobile__link" href="questions.html"><span>Вопросы и ответы</span></a></li>
+                        <li class="header-mobile__item"><a class="header-mobile__link" href="news.html"><span>Новости</span></a></li>
+                </ul>
+              </nav>
+              <div class="header-mobile__contacts">
+                <ul class="header-mobile__contacts-list">
+                  <li class="header-mobile__contacts-item">
+                    <div class="header-mobile__contacts-link">
+                      <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                      </svg>
+                    </div>
+                    <div class="header-mobile__body header-mobile__body--hidden">   <span class="header-mobile__title">Мы ждём вашего звонка.   </span>
+                      <ul class="header-mobile__phone-list">
+                        <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                            <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                            </svg><span class="header-mobile__phone-number">+375-33-6346536 </span><span class="header-mobile__phone-text">МТС</span></a></li>
+                        <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                            <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                            </svg><span class="header-mobile__phone-number">+375-29-6536363 </span><span class="header-mobile__phone-text">А1</span></a></li>
+                        <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                            <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                            </svg><span class="header-mobile__phone-number">+375-25-4138513  </span><span class="header-mobile__phone-text">life                               </span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="#" target="_blank" rel="nofollow">
+                      <svg class="svg-sprite-icon icon-viber header-mobile__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#viber"></use>
+                      </svg></a></li>
+                  <li class="header-mobile__contacts-item"> <a class="header-mobile__contacts-link" href="mailto:drimer@sharik.by">
+                      <svg class="svg-sprite-icon icon-mail header-mobile__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
+                      </svg></a></li>
+                  <li class="header-mobile__contacts-item">       <a class="header-mobile__contacts-link" href="#" target="_blank" rel="nofollow">
+                      <svg class="svg-sprite-icon icon-instagram header-mobile__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#instagram"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header-mobile__shadow"> </div>
+          <div class="header-mobile__toggle">                  
+            <div class="header-mobile__phone">
+              <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="header-mobile__body">   <span class="header-mobile__title">Мы ждём вашего звонка.   </span>
+              <ul class="header-mobile__phone-list">
+                <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                    <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><span class="header-mobile__phone-number">+375-33-6346536 </span><span class="header-mobile__phone-text">МТС</span></a></li>
+                <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                    <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><span class="header-mobile__phone-number">+375-29-6536363 </span><span class="header-mobile__phone-text">А1</span></a></li>
+                <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                    <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><span class="header-mobile__phone-number">+375-25-4138513  </span><span class="header-mobile__phone-text">life       </span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-mobile__phone-shadow">   </div>
+        </div>
+        <div class="header-mobile__logo"><img src="static/images/general/logo.svg" alt="Лого"></div>
+        <div class="header-mobile__right">
+          <div class="header-mobile__bag"><a class="header-top__link" href="basket.html"> 
+              <svg class="svg-sprite-icon icon-bag header-top__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+              </svg>
+              <div class="header-top__count"><span>0    </span></div></a></div>
+        </div>
+      </div>
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <div class="header-top__left">
+              <div class="header-top__notebook">
+                <div class="header-top__phone">
+                  <div class="header-top__wrapper"><img src="static/images/content/ellipse/01.svg" alt="">
+                    <div class="header-top__text">мтс</div>
+                  </div><a class="header-top__link" href="tel:+375295668513">+375 (29) <b>566-85-13</b></a>
+                  <svg class="svg-sprite-icon icon-download header-top__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#download"></use>
+                  </svg>
+                </div>
+                <div class="header-top__hidden"> 
+                  <div class="header-top__phone">
+                    <div class="header-top__wrapper">   <img src="static/images/content/ellipse/01.svg" alt="">
+                      <div class="header-top__text">life</div>
+                    </div><a class="header-top__link" href="tel:+375252468343">+375 (25) <b>246-83-43</b></a>
+                  </div>
+                  <div class="header-top__phone"> 
+                    <div class="header-top__wrapper">  <img src="static/images/content/ellipse/03.svg" alt="">
+                      <div class="header-top__text header-top__text--small">А1/<span>viber</span> </div>
+                    </div><a class="header-top__link" href="tel:+375334534634">+375 (33) <b>453-46-34</b> </a>
+                  </div><a class="header-top__email" href="mailto:drimer@sharik.by"><b>primer@sharik.by</b> </a>
+                  <div class="header-top__row">
+                    <svg class="svg-sprite-icon icon-clock header-top__clock">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#clock"></use>
+                    </svg>
+                    <div class="header-top__box">
+                      <div class="header-top__working-day">Работаем с 9:00 до 21:00</div>
+                      <div class="header-top__descr">24 часа по предзаказу</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-top__col">
+                <div class="header-top__phone">
+                  <div class="header-top__wrapper"><img src="static/images/content/ellipse/01.svg" alt="">
+                    <div class="header-top__text">мтс</div>
+                  </div><a class="header-top__link" href="tel:+375295668513">+375 (29) <b>566-85-13</b></a>
+                </div>
+                <div class="header-top__phone">
+                  <div class="header-top__wrapper">   <img src="static/images/content/ellipse/01.svg" alt="">
+                    <div class="header-top__text">life</div>
+                  </div><a class="header-top__link" href="tel:+375252468343">+375 (25) <b>246-83-43</b></a>
+                </div>
+              </div>
+              <div class="header-top__col"> <a class="header-top__email" href="mailto:drimer@sharik.by"><b>primer@sharik.by</b> </a>
+                <div class="header-top__phone"> 
+                  <div class="header-top__wrapper">  <img src="static/images/content/ellipse/03.svg" alt="">
+                    <div class="header-top__text header-top__text--small">А1/<span>viber</span> </div>
+                  </div><a class="header-top__link" href="tel:+375334534634">+375 (33) <b>453-46-34</b>  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header-top__center"><a class="header-top__logo" href="index.html"><img src="static/images/general/logo.svg" alt="Логотип"></a>
+            </div>
+            <div class="header-top__right">
+              <div class="header-top__row">
+                <svg class="svg-sprite-icon icon-clock header-top__clock">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#clock"></use>
+                </svg>
+                <div class="header-top__box">
+                  <div class="header-top__working-day">Работаем с 9:00 до 21:00</div>
+                  <div class="header-top__descr">24 часа по предзаказу</div>
+                </div>
+              </div>
+              <div class="header-top__line">
+                <ul class="header-top__socials">
+                  <li class="header-top__item"><a class="header-top__link" href="not-found.html" target="_blank" rel="nofollow">
+                      <svg class="svg-sprite-icon icon-viber header-top__icon header-top__icon--color">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#viber"></use>
+                      </svg></a></li>
+                  <li class="header-top__item"><a class="header-top__link" href="not-found.html" target="_blank" rel="nofollow">
+                      <svg class="svg-sprite-icon icon-instagram header-top__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#instagram"></use>
+                      </svg></a></li>
+                  <li class="header-top__item"> 
+                    <div class="header-top__search search">
+                      <div class="header-top__btn">
+                        <svg class="svg-sprite-icon icon-search header-top__icon">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                        </svg>
+                      </div>
+                      <div class="search__body">
+                        <form class="search__form">
+                          <input class="search__input" placeholder="Поиск" type="text">
+                          <div class="search__btn search__clear">
+                            <svg class="svg-sprite-icon icon-close search__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                            </svg>
+                          </div>
+                          <button class="search__btn" type="submit">
+                            <svg class="svg-sprite-icon icon-search search__icon">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-top__item"><a class="header-top__link" href="basket.html"> 
+                      <svg class="svg-sprite-icon icon-bag header-top__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                      </svg>
+                      <div class="header-top__count"><span>0                  </span></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="header-bottom__nav">
+            <ul class="header-bottom__list">
+              <li class="header-bottom__item">
+                <div class="header-bottom__link header-bottom__link--red"> <span>Каталог </span>
+                  <svg class="svg-sprite-icon icon-arrow-down header-bottom__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+                <div class="menu">
+                  <div class="menu__inner"> 
+                    <div class="menu__col"><span class="menu__title">События</span>
+                      <ul class="menu__list">
+                                        <li class="menu__item"><a class="menu__link" href="">День рождения</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">14 февраля</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">8 марта</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">23 февраля</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">9 мая</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Выпускной</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Свадьба</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Открытие кафе, магазина</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Выписка из роддома</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Новый год</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu__col"><span class="menu__title">Типы</span>
+                      <ul class="menu__list">
+                                        <li class="menu__item"><a class="menu__link" href="">Гелиевые воздушные шары</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Фольгированные шары</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Букеты из воздушных шаров</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Крафтовые букеты из шаров</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Светящиеся шары</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Фигуры из воздушных шаров</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Цифры, буквы и слова из шаров</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu__col"><span class="menu__title">Услуги</span>
+                      <ul class="menu__list">
+                                        <li class="menu__item"><a class="menu__link" href="">Печать на шарах</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Оформление сцены</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Оформление презентаций и выставок</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Украшение машин</a></li>
+                                        <li class="menu__item"><a class="menu__link" href="">Клоун на день рождения</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+                  <li class="header-bottom__item"><a class="header-bottom__link" href="delivery.html"><span>Доставка</span></a></li>
+                  <li class="header-bottom__item"><a class="header-bottom__link" href="reviews.html"><span>Отзывы</span></a></li>
+                  <li class="header-bottom__item"><a class="header-bottom__link" href="how-to-order.html"><span>Как заказать</span></a></li>
+                  <li class="header-bottom__item"><a class="header-bottom__link" href="payment.html"><span>Способ оплаты</span></a></li>
+                  <li class="header-bottom__item"><a class="header-bottom__link" href="questions.html"><span>Вопросы и ответы</span></a></li>
+                  <li class="header-bottom__item"><a class="header-bottom__link" href="news.html"><span>Новости</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="breadcrumbs">
+        <div class="container"> 
+          <div class="breadcrumbs__wrapper">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html"> <span class="breadcrumbs__text">Главная</span>
+                  <svg class="svg-sprite-icon icon-arrow-right breadcrumbs__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                  </svg></a></li>
+              <li class="breadcrumbs__item">
+                <div class="breadcrumbs__current"> <span>Гелиевые воздушные шары</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="subcatalog">
+        <div class="container"> 
+          <div class="subcatalog-header">
+            <h1 class="title-big">Гелиевые воздушные шары в Минске</h1>
+            <div class="subcatalog-col">
+              <p class="text">Цена на воздушные шарики наполненные газообразным гелием указана <b>без учета дополнительной обработки - Hi-float.</b></p>
+              <p class="text">Стоимость дополнительной обработки любого латексного шарика средством  <b>Hi-float составляет - 0.30 руб.</b></p>
+            </div>
+            <div class="subcatalog-row">
+              <p class="text"><b>Доставка гелиевых воздушных шаров по Минску:</b></p>
+              <p class="text">С 10-00 до 21-00 в пределах черты города — бесплатно при заказе на сумму 75 BYN и более.</p>
+              <p class="text">С 10-00 до 21-00 в пределах МКАД — 6 BYN с суммой минимального заказа от 25 BYN до 75 BYN.  </p>
+            </div>
+          </div>
+          <div class="subcatalog-body">
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/01.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шарики гелиевые 30 см, с конфетти.</a><span class="product-prev__articul">Артикул 12354</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">3.50 р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/02.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шар прозрачный 30 см с конфетти &quot;круги&quot;.</a><span class="product-prev__articul">Артикул 12353</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">3.50р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/03.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шар прозрачный 30 см с конфетти &quot;круги&quot;.</a><span class="product-prev__articul">Артикул 12352</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">3.50р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/04.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шары с гелием 30 см, ассорти.</a><span class="product-prev__articul">Артикул 11330</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">2.00р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/05.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Свето-Шары 30 см.</a><span class="product-prev__articul">Артикул 11334</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">3.50р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/06.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Сердце шарик 30 смс гелием.</a><span class="product-prev__articul">Артикул 12382</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">2.40р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/07.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шарики 25 cм, с гелием.</a><span class="product-prev__articul"> Артикул 11770</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">1.40р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/08.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шарики гелевые хром.</a><span class="product-prev__articul">Артикул 12523</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">3.00р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/09.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шары в виде сердца с гелием 25см. </a><span class="product-prev__articul">Артикул 11729</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">1.80р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/10.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Цифра 1+8 шаров+5 шаров конф.+3 звезды&quot;.</a><span class="product-prev__articul">Артикул 12554</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">66.50р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/11.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">2 цифры +4 сердца +1 звезда+2 конф. &quot;.</a><span class="product-prev__articul">Артикул 12555</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">67.00р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/12.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">1 цифра+6 шаров+1 шар конф.+1 звезда.</a><span class="product-prev__articul">Артикул 12556</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">36.50р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/13.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шары в виде сердца с гелием. </a><span class="product-prev__articul">Артикул 11729</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">1.80р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/14.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шары в виде сердца     с гелием. </a><span class="product-prev__articul">Артикул 11729</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">1.80р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/15.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шары в виде сердца с гелием. </a><span class="product-prev__articul"> Артикул 11729</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">1.80р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-prev">
+              <div class="product-prev__inner"><a class="product-prev__header" href="product.html"><img class="product-prev__img" src="static/images/content/products/16.jpg"/></a>
+                <div class="product-prev__body"><a class="product-prev__name" href="product.html">Шары в виде сердца с гелием.</a><span class="product-prev__articul">Артикул 11729</span></div>
+                <div class="product-prev__footer">
+                  <div class="product-prev__row">
+                    <div class="counter">
+                      <button class="counter__btn counter__btn--minus">&minus;</button>
+                      <input class="counter__value" type="text" value="1"/>
+                      <button class="counter__btn counter__btn--plus">&#43;</button>
+                    </div>
+                    <div class="product-prev__price">1.80р./шт</div>
+                  </div><a class="btn btn--transparent js-popup-link" href="#popup-order">Заказ в 1 клик</a>
+                  <button class="btn" type="submit">
+                    <svg class="svg-sprite-icon icon-bag btn__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>В корзину</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subcatalog-footer">
+            <div class="subcatalog-block">
+              <h2 class="title">Характеристики гелия</h2>
+              <p class="text">Гелий очень быстро улетучивается из латексного шарика - в зависимости от его размера. Для того, чтобы воздушные шары с гелием держались дольше, перед тем как их надуть, мы обрабатываем его специальным средством - Hi-float. Cредство не токсично, представляет собой прозрачную густую жидкость, которая продлевает "Жизнь" гелиевых шаров до двух-трех дней. В некоторых случаях шары с гелием могут продержаться до семи дней.</p>
+              <p class="text">Независимо от обработки, в некоторых случаях, шарики наполненные гелием могут не продержаться заявленное время: при неаккуратной перевозке и транспортировке, при температуре воздуха более 20 градусов по Цельсию (независимо в помещении или на улице), при попадании прямых солнечных лучей, а также при сильном ветре и осадках (если используете на улице) и др.</p>
+            </div>
+            <div class="subcatalog-block">
+              <h2 class="title">Гелиевые воздушные шары в Минске – сеты и букеты из шариков к празднику</h2>
+              <p class="text">Воздушные гелиевые шары – это незабываемый праздник, делающий из рядового дня фантастическую сказку. Их уместно приобрести ко дню рождения ребенка и любимой девушки, когда хочется удивить, подарить прекрасное настроение. Только с виду они кажутся простыми, а на деле фольгированные и круглые шарики сродни волшебной палочке. Оказаться рядом с чудом несложно: достаточно утром открыть глаза, как под потолок взвивается связка ярких шаров. Маленькие и большие, красные и золотистые – гелиевые шары с доставкой мы предлагаем тем, кто в ожидании праздника.  </p>
+            </div>
+            <div class="subcatalog-block">
+              <h2 class="title">Радуга в небе - запуск шариков</h2>
+              <p class="text">Вы никогда не думали, чтобы купить гелиевые шары на день рождения для своих близких? А потом вместе загадать желание и запустить в небо радужную связку с надеждой, что мечты сбудутся. Можно приурочить запуск к другим важным событиям:  </p>
+              <ul class="subcatalog-list">
+                <li class="subcatalog-item">выпускной в школе, университете и т.д.</li>
+                <li class="subcatalog-item">свадьба;</li>
+                <li class="subcatalog-item">мальчишник или девичник;</li>
+                <li class="subcatalog-item">встреча супруги с ребенком из роддома.</li>
+              </ul>
+              <p class="text">Необычайно популярными в Минске становятся сеты из гелиевых шаров. Красно-белые, желто-зеленые, золотисто-черные облака доставят радость получателю. Можно заказать надувную композицию, состоящую из воздушных сердец, звездочек, сказочных персонажей.</p>
+            </div>
+            <div class="subcatalog-block">
+              <h2 class="title">Купить гелиевые шарики в Минске: наши предложения</h2>
+              <p class="text">У нас можно купить гелиевые воздушные шарики любого цвета, однотонные и в горох, с блестками внутри. Выбирайте изделия из латекса с рисунками принцесс или тематическими надписями. Цена удовольствия невысокая, а радости – море. В Минске появилась новинка: крошечные шары в связке, упакованные в яркую коробку. Стоит ее открыть, как они вырвутся наружу, вызвав бурю эмоций у того, кто получит необычный сюрприз.</p>
+              <p class="text">Хотите устроить шариковый фейерверк, оформить красиво арку, помещение, вручить друзьям, коллегам воздушный букет? Звоните нам, привезем оригинальное украшение к назначенному времени.           </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top__inner">
+            <div class="footer-top__col">
+              <div class="footer-top__logo"><img src="static/images/general/logo.svg" alt="Лого"></div>
+            </div>
+            <div class="footer-top__col"><span class="footer-top__text">Мы находимся по адресу:</span><span class="footer-top__text">г. Минск, ул. М. Богдановича, 56</span></div>
+            <div class="footer-top__col"><a class="footer-top__link" href="tel:+375296346536">+375-29-6346536</a><a class="footer-top__link" href="tel:+375295668513">+375-29-5668513</a></div>
+            <div class="footer-top__col"> <a class="footer-top__email" href="mailto:drimer@sharik.by">primer@sharik.by  </a>
+              <ul class="footer-top__list"> 
+                    <li class="footer-top__item"><a class="footer-top__link" href="" target="_blank" rel="nofollow"><img class="footer-top__icon" src="static/images/content/socials/vk.svg"></a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="" target="_blank" rel="nofollow"><img class="footer-top__icon" src="static/images/content/socials/fb.svg"></a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="" target="_blank" rel="nofollow"><img class="footer-top__icon" src="static/images/content/socials/inst.svg"></a></li>
+                    <li class="footer-top__item"><a class="footer-top__link" href="" target="_blank" rel="nofollow"><img class="footer-top__icon" src="static/images/content/socials/yt.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__inner">
+            <div class="footer-bottom__line"><span class="footer-bottom__text">Свидетельство о гос. регистрации ИП: №192245329, выдано Минским горисполкомом от 27 марта 2014 г.</span><span class="footer-bottom__text">ИП Ройник Дмитрий Владимирович УНП 192245329 Юр. адрес: г. Минск, ул. Балтийская, 4-173</span><span class="footer-bottom__text">Данный сайт не является интернет-магазином и служит для ознакомления с каталогом продукции.</span></div>
+            <div class="footer-bottom__contacts">
+              <ul class="header-mobile__contacts-list">
+                <li class="header-mobile__contacts-item">
+                  <div class="header-mobile__contacts-link">
+                    <svg class="svg-sprite-icon icon-phone footer-bottom__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <div class="header-mobile__body header-mobile__body--hidden">   <span class="header-mobile__title">Мы ждём вашего звонка.   </span>
+                    <ul class="header-mobile__phone-list">
+                      <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                          <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                          </svg><span class="header-mobile__phone-number">+375-33-6346536 </span><span class="header-mobile__phone-text">МТС</span></a></li>
+                      <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                          <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                          </svg><span class="header-mobile__phone-number">+375-29-6536363 </span><span class="header-mobile__phone-text">А1</span></a></li>
+                      <li class="header-mobile__phone-item"><a class="header-mobile__phone-link" href="tel:+375252468343"> 
+                          <svg class="svg-sprite-icon icon-phone header-mobile__icon">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                          </svg><span class="header-mobile__phone-number">+375-25-4138513  </span><span class="header-mobile__phone-text">life                               </span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="#" target="_blank" rel="nofollow">
+                    <svg class="svg-sprite-icon icon-viber footer-bottom__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#viber"></use>
+                    </svg></a></li>
+                <li class="header-mobile__contacts-item"> <a class="header-mobile__contacts-link" href="mailto:drimer@sharik.by">
+                    <svg class="svg-sprite-icon icon-mail footer-bottom__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
+                    </svg></a></li>
+                <li class="header-mobile__contacts-item">       <a class="header-mobile__contacts-link" href="#" target="_blank" rel="nofollow">
+                    <svg class="svg-sprite-icon icon-instagram footer-bottom__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#instagram"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer-bottom__line"> <span class="footer-bottom__text footer-bottom__text--center">Разработано: Webernetic     </span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <button class="scroll-top"></button>
+  <div class="popup mfp-hide popup--order" id="popup-order">
+    <div class="popup-sending">
+      <div class="popup-header"><span class="title">Быстрый заказ товара</span>
+        <div class="close"></div>
+      </div>
+      <div class="popup-body">
+        <form class="form">
+          <div class="form-item">
+            <div class="form-header">
+              <label class="form-label">Ваше имя</label><span class="form-star">&lowast;</span>
+            </div>
+            <div class="form-body"> 
+              <div class="form-input__wrapper form-input__wrapper--top">      
+                <input class="form-input" placeholder="Василий Петров" type="text" name="name">
+              </div>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="form-header">
+              <label class="form-label">Телефон</label><span class="form-star">&lowast;</span>
+            </div>
+            <div class="form-body"> 
+              <div class="form-input__wrapper form-input__wrapper--top">   
+                <input class="form-input" placeholder="375-29-555 55 55" type="tel" name="phone">
+              </div>
+            </div>
+          </div>
+          <div class="form-button">      
+            <button class="btn" type="submit">Отправить </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup-success">
+      <div class="popup-header"><span class="title">Спасибо за заказ!</span>
+        <div class="close"></div>
+      </div>
+      <div class="popup-body">
+        <div class="text">Благодарим вас за то, что выбрали нас. Ждём вас в нашем магазине снова. С уважением, команда – <b>sharik.by!</b> </div>
+      </div>
+      <div class="popup-footer">              
+        <button class="btn btn--blue">Хорошо                              </button>
+      </div>
+    </div>
+  </div>
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/libs.min.js"></script>
+  <script src="static/js/main.js"></script>
+</html>
