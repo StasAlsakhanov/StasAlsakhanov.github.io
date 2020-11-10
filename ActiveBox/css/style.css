@@ -1,0 +1,661 @@
+*,
+*::before,
+*::after {
+  /* псевдоэлементы */
+  box-sizing: border-box;
+  /* алгоритм подсчета размера блоков с учетом отступов и границ */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Cardo', serif; */
+  font-family: "Raleway", sans-serif;
+  /* семейство шрифтов */
+  font-weight: 400;
+  /* плотность шрифта */
+  font-size: 14px;
+  /* размер шрифта */
+  color: #6c7279;
+  /* цвет текста */
+  background-color: #ffffff;
+  /* цвет фона */
+  -webkit-font-smoothing: antialiased;
+  /* сглаживание шрифта */
+}
+
+.container {
+  width: 100%;
+  /* ширина блока 100% */
+  max-width: 1200px;
+  /* максимальная ширина блока */
+  margin: 0 auto;
+  /* выравнивание по центру */
+  padding: 0 15px;
+  /* отступы по 15px слева и справа */
+}
+
+.header {
+  width: 100%;
+  /* ширина блока 100% */
+  height: 100px;
+  /* высота */
+  position: absolute;
+  /* этот элемент делает хедер вторым слоем, поверх других слое */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* чтобы он был поверх всех элементов */
+}
+
+.header.fixed {
+  height: auto;
+  /* автоматическая высота*/
+  position: fixed;
+  /* позиция 'скрол'*/
+  background-color: #31344e;
+}
+
+.header.fixed .header__inner {
+  padding: 15px 0;
+  border-bottom: none;
+  /* исчезает линия при скроле */
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  /* между элементами данного флекс-бокса будет пустое место (расстояние) */
+  align-items: center;
+  /* выравнивание элементов по горизонтальной линии (центру) */
+  padding: 35px 0;
+  border-bottom: 1px solid #515369;
+  /* нижняя граница (линия) */
+}
+
+.nav {
+  display: flex;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  /* делает текст большими буквами */
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  /* убирает линию снизу */
+  opacity: 0.75;
+  /* делает текст полупрозрачным */
+  transition: opacity 0.1s linear;
+  /* при наводе делает плавный переход */
+  margin-left: 50px;
+  /* внешний отступ слева */
+}
+
+.nav__link:first-child {
+  /* псевдокласс */
+  padding-left: 0;
+  /* убирает у первого элемента внешний отступ слева */
+}
+
+.nav__link:hover {
+  opacity: 1;
+  /* при наводе текст становится непрозрачным */
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  /* каждый новый элемент в блоке будет начинаться с новой строки */
+  justify-content: center;
+  /* выравнивает ячейку по центру блока */
+  height: 750px;
+  padding-top: 100px;
+  background: #31344e;
+  /* запасной фон, если фоновое избражение не загрузится */
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  /* устанавливает одно фоновое изображение без его повторений */
+  background-size: cover;
+  /* масштабирует изображение так, чтобы его ширина или высота равнялась ширине или высоте блока */
+  background-position: center;
+  /* позиционирование фонового изображения по центру */
+}
+
+.intro__inner {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1.1;
+  /* междустрочный отступ */
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.intro__subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 60px;
+  /* внешний отступ снизу */
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  /* задает размеры и отступы кнопки */
+  vertical-align: top;
+  /* выравнивание по вертикальной границе, мы делаем по верху */
+  font-weight: 600;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /* делает текст большими буквами */
+  text-decoration: none;
+  /* убирает линию снизу */
+  padding: 15px 49px;
+  /* внутренний отступ */
+  border-radius: 2px;
+  /* скругление границ кнопки */
+  border: 0;
+  /* убирает границу */
+  cursor: pointer;
+  /* добавляет курсор (появляется ручка) */
+  transition: background 0.1s linear;
+  /* плавный переход цвета фона */
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.btn--red {
+  background-color: #e84545;
+}
+
+.btn--red:hover {
+  background-color: #dd3434;
+  /* при наводе изменения цвета фона */
+}
+
+.btn--long {
+  /* длинная кнопка */
+  min-width: 280px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  /* элементы переносятся на новую строку, если они не помещаются в контейнер */
+  margin: 95px 0;
+}
+
+.features__item {
+  width: 33.33333%;
+  /* ширина одного элемента из трех */
+  text-align: center;
+  /* выравнивание текста по центру */
+  padding: 0 40px;
+  margin: 25px 0;
+}
+
+.features__icon {
+  margin-bottom: 25px;
+}
+
+.features__title {
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.features__text {
+  line-height: 1.5;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  /* элементы переносятся на новую строку, если они не помещаются в контейнер */
+}
+
+.works__item {
+  width: 25%;
+  /* ширина одного элемента из четырех */
+  height: 350px;
+  /* высота картинки */
+  position: relative;
+  /* Относительное позиционирование */
+  overflow: hidden;
+  /* элемент скрывает все, что вылезает за пределы блока */
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.works__item:hover .works__content {
+  opacity: 1;
+  /* при наводе контент появляется */
+}
+
+.works__photo {
+  min-width: 100%;
+  /* минимальная ширина */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  /* картинка едет вниз на 50% */
+  left: 50%;
+  /* картинка едет влево на 50% */
+  z-index: 1;
+  transform: translate3d(-50%,
+      -50%,
+      0);
+  /* по оси X -50%, по оси Y -50%, по оси Z 0 */
+}
+
+.works__content {
+  display: flex;
+  flex-direction: column;
+  /* каждый новый элемент в блоке будет начинаться с новой строки */
+  justify-content: center;
+  /* выравнивание по центру по вертикали */
+  text-align: center;
+  /* выравнивание по центру по горизонтали */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(232, 69, 69, 0.9);
+  /* непрозрачность или заливка 90% */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 0;
+  /* картинка прижимается к верхнему краю */
+  left: 0;
+  /* картинка прижимается к левому краю */
+  z-index: 2;
+  /* больше чем у фотографии, чтобы данный блок был поверх нашей фотографии*/
+  opacity: 0;
+  /* скрывает контент по умолчанию */
+  transition: opacity 0.2s linear;
+  /* плавный переход */
+}
+
+.works__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.works__text {
+  color: #ffffff;
+}
+
+.team {
+  margin: 100px 0 70px;
+}
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  /* элементы переносятся на новую строку, если они не помещаются в контейнер */
+  margin: 0 -15px;
+  /* отрицательный, равный нашему внутреннему отступу -15px */
+}
+
+.team__item {
+  width: 25%;
+  /* ширина одного элемента из четырех */
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.team__photo {
+  display: block;
+  max-width: 100%;
+  /* максимально занимает 100% ширины блока */
+  height: auto;
+  /* высота и ширина будет уменьшаться пропорционально */
+  margin-bottom: 20px;
+}
+
+.team__name {
+  font-size: 22px;
+  color: #2d3033;
+  margin-bottom: 8px;
+}
+
+.team__prof {
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.team__text {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+}
+
+.social--footer {
+  justify-content: center;
+  /* выравнивание по центру по вертикали */
+}
+
+.social__item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+  justify-content: center;
+  /* выравнивание по центру по вертикали */
+  align-items: center;
+  /* выравнивание элементов по горизонтальной линии (центру) */
+  margin-right: 4px;
+  background-color: #fff;
+  transition: background 0.1s linear;
+  /* плавный переход цвета фона */
+}
+
+.social__item:hover {
+  background-color: #e8ecee;
+  /* при наводе меняется цвет фона */
+}
+
+.social__item:hover .social__icon {
+  /* при наводе меняется цвет иконки */
+  fill: #000000;
+}
+
+.social--footer .social__item {
+  background-color: transparent;
+  /* делает фон прозрачным */
+  border-width: 2px;
+  /* меняет толщину обводки */
+  border-color: #fff;
+  /* меняет цвет обводки */
+  border-radius: 2px;
+  /* загругления краев на 2px */
+}
+
+.social--footer .social__item:hover {
+  background-color: #fff;
+  /* при наводе меняется цвет фона */
+}
+
+.social__icon {
+  display: block;
+  height: 18px;
+  fill: #c6cacc;
+  transition: fill 0.1s linear;
+  /* плавный переход цвета иконки */
+}
+
+.social--footer .social__icon {
+  fill: #fff;
+}
+
+.social--footer .social__item:hover .social__icon {
+  /* при наводе меняется цвет иконки */
+  fill: #3a3e64;
+}
+
+.reviews {
+  overflow: hidden;
+  /* если картинки будут очень большие, чтобы они не вылезали за границы нашего блока */
+  background-color: #53354a;
+}
+
+.reviews__slider {
+  height: 500px;
+  overflow: hidden;
+}
+
+.reviews__slider.slick-initialized {
+  height: auto;
+}
+
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+  /* элементы переносятся на новую строку, если они не помещаются в контейнер */
+  overflow: hidden;
+}
+
+.reviews__photo {
+  width: 50%;
+  /* занимает половину экрана */
+  height: 500px;
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+.reviews__img {
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  /* делает идеально ровно по центру по вертикали */
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  /* каждый новый элемент в блоке будет начинаться с новой строки */
+  justify-content: center;
+  /* выравнивание по центру по вертикали */
+  width: 50%;
+  padding-left: 80px;
+  max-width: 590px;
+}
+
+.reviews__text {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  /* стиль шрифта italic */
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.reviews__author {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 15px;
+  list-style: none;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background: #fff;
+  border-radius: 50%;
+  border: 0;
+  opacity: 0.5;
+  /* полупрозрачная кнопка  */
+  cursor: pointer;
+  font-size: 0;
+  color: transparent;
+}
+
+.slick-dots button:focus {
+  outline: 0;
+  /* при фокусе на кнопку мы убираем outline (контур) */
+}
+
+.slick-dots .slick-active button {
+  opacity: 1;
+  /* непрозрачная кнопка  */
+}
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+  /* выравнивание текста по центру */
+}
+
+.download__title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #2d3033;
+  padding-bottom: 10px;
+}
+
+.download__text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2d3033;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.footer {
+  background-color: #3a3e64;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  /* элементы переносятся на новую строку, если они не помещаются в контейнер */
+  padding: 70px 0;
+}
+
+.footer__block {
+  width: 33.33333%;
+  /* ширина одного элемента из трех */
+  text-align: center;
+  /* выравнивание текста по центру */
+  padding: 0 15px;
+}
+
+.footer__title {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__address {
+  font-style: normal;
+  /* по умолчанию font-style: italic, делаем font-style: normal */
+  color: rgba(255, 255, 255, 0.5);
+  /* непрозрачность 50% */
+  line-height: 1.5;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.5);
+  /* непрозрачность 50% */
+  line-height: 1.5;
+}
+
+.copyright {
+  background-color: #313454;
+  padding: 20px 0;
+}
+
+.copyright__text {
+  text-align: center;
+  line-height: 1.5;
+  color: #808080;
+}
+
+.copyright__text span {
+  /* часть текста другого цвета */
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+  /* скрывает иконку 'меню' */
+  background: none;
+  /* убираем фон */
+  border: 0;
+  /* убираем границу */
+  cursor: pointer;
+  padding: 9px 2px;
+}
+
+.burger__item {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  font-size: 0;
+  /* размер шрифта'ноль' */
+  color: transparent;
+  /* цвет текста 'прозрачный' */
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+.burger__item::before,
+.burger__item::after {
+  /* псевдоэлементы */
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  /* Абсолютное позиционирование */
+  right: 0;
+  /* прижимаем к правому краю */
+  z-index: 1;
+}
+
+.burger__item::before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger__item::after {
+  width: 26px;
+  bottom: -8px;
+}

@@ -1,0 +1,174 @@
+@media (max-width: 1300px) {
+    .works__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        display: none;
+        /* скрывает меню */
+        width: 100%;
+        /* ширина 100% */
+        flex-direction: column;
+        /* каждый новый элемент в блоке будет начинаться с новой строки */
+        background-color: #31344e;
+        text-align: right;
+        /* прижимаем текст к правому краю */
+        position: absolute;
+        /* относительно нашей шапки */
+        top: 100%;
+        /* 100% от высоты нашей шапки */
+        right: 0;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .intro {
+        height: auto;
+        /* автоматическая высота */
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .features {
+        margin: 50px 0;
+    }
+
+    .features__item {
+        width: 50%;
+    }
+
+    .team__item {
+        width: 50%;
+        text-align: center;
+        /* nвыравнивание текста по центру */
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+        /* делаем фотографию по центру нашего блока */
+    }
+
+    .social {
+        justify-content: center;
+        /* выравнивание по центру по вертикали */
+    }
+
+    .reviews__photo {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .reviews__content {
+        width: 100%;
+        padding: 50px;
+        max-width: none;
+    }
+
+    .slick-dots {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        height: auto;
+        /* автоматическая высота */
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .features {
+        margin: 40px 0;
+    }
+
+    .features__item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .works__item {
+        width: 100%;
+        height: 300px;
+    }
+
+    .team {
+        margin: 60px 0 30px;
+    }
+
+    .team__item {
+        width: 100%;
+    }
+
+    .reviews__text {
+        font-size: 24px;
+    }
+
+    .reviews__author {
+        font-size: 11px;
+    }
+
+    .download {
+        margin: 50px 0;
+    }
+
+    .download__title {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .download__text {
+        font-size: 11px;
+    }
+
+    .btn--long {
+        min-width: 260px;
+    }
+
+    .footer__inner {
+        padding: 30px 0;
+    }
+
+    .footer__block {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer__block:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .reviews__img {
+        right: -160px;
+    }
+}
