@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "MuseoSansCyrl-100";
+	src: local("MuseoSansCyrl 100"), local("MuseoSansCyrl-100"),
+		url("../fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.ttf") format("truetype"),
+		url("../fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.eot") format("embedded-opentype"),
+		url("../fonts/MuseoSansCyrl-100/MuseoSansCyrl-100.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MuseoSansCyrl-300";
+	src: local("MuseoSansCyrl 300"), local("MuseoSansCyrl-300"),
+		url("../fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.ttf") format("truetype"),
+		url("../fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.eot") format("embedded-opentype"),
+		url("../fonts/MuseoSansCyrl-300/MuseoSansCyrl-300.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MuseoSansCyrl-900";
+	src: local("MuseoSansCyrl 900"), local("MuseoSansCyrl-900"),
+		url("../fonts/MuseoSansCyrl-900/MuseoSansCyrl-900.ttf") format("truetype"),
+		url("../fonts/MuseoSansCyrl-900/MuseoSansCyrl-900.eot") format("embedded-opentype"),
+		url("../fonts/MuseoSansCyrl-900/MuseoSansCyrl-900.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "BebasNeue-700";
+	src: local("Bebas Neue Bold"), local("Bebas Neue Bold"),
+		url("../fonts/bebas_neue_bold/bebas_neue_bold.ttf") format("truetype"),
+		url("../fonts/bebas_neue_bold/bebas_neue_bold.eot") format("embedded-opentype"),
+		url("../fonts/bebas_neue_bold/bebas_neue_bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MuseoCyrl-100";
+	src: url("../fonts/MuseoCyrl-100/MuseoCyrl-100.eot");
+	src: url("../fonts/MuseoCyrl-100/MuseoCyrl-100.eot") format("embedded-opentype"),
+		url("../fonts/MuseoCyrl-100/MuseoCyrl-100.woff") format("woff"),
+		url("../fonts/MuseoCyrl-100/MuseoCyrl-100.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "lazer";
+	src: url("../fonts/lazer/lazer.eot");
+	src: url("../fonts/lazer/lazer.woff2") format("woff2"), 		
+		url("../fonts/lazer/lazer.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/lazer/lazer.woff") format("woff"),
+		url("../fonts/lazer/lazer.ttf") format("truetype"), 
+		url("../fonts/lazer/lazer.svg") format("svg");		
+	font-weight: normal;
+	font-style: normal;
+}
