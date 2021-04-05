@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <a class="header__logo">
+                        <picture>
+                            <source srcset="images/general/logo.webp" type="image/webp">
+                            <img loading="lazy" src="images/general/logo.png" alt="">
+                        </picture>
+                    </a>
+                    <div class="header__toggle">
+                        <span></span>
+                    </div>
+                    <div class="header__body">
+                        <div class="header__menu"></div>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="tel:+74957760058" class="header__link">
+                                    <svg class="header__icon" viewBox="0 0 24 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.58398 1.62701L6.33448 1.10051C7.29342 0.811341 8.3248 0.880951 9.23619 1.29634C10.1476 1.71174 10.8767 2.44454 11.2875 3.35801L12.6405 6.36701C12.9937 7.15271 13.092 8.02927 12.9217 8.87371C12.7515 9.71815 12.3211 10.4881 11.691 11.0755L9.44998 13.165C9.38447 13.2261 9.34297 13.3085 9.33298 13.3975C9.26698 13.993 9.67048 15.1525 10.6005 16.765C11.277 17.9365 11.8905 18.76 12.411 19.2205C12.774 19.543 12.9735 19.612 13.059 19.588L16.074 18.6655C16.8973 18.4137 17.7789 18.4258 18.595 18.7001C19.4112 18.9745 20.121 19.4974 20.625 20.1955L22.5465 22.8595C23.1308 23.6696 23.4013 24.6643 23.3078 25.6588C23.2143 26.6532 22.7631 27.58 22.038 28.267L20.709 29.527C20.0036 30.195 19.1373 30.6689 18.1944 30.9026C17.2515 31.1362 16.2641 31.1218 15.3285 30.8605C11.1975 29.707 7.49398 26.221 4.17598 20.4745C0.853482 14.7205 -0.312018 9.76451 0.761982 5.60501C1.00375 4.66951 1.48241 3.81206 2.15184 3.1153C2.82127 2.41855 3.6589 1.90598 4.58398 1.62701ZM5.23348 3.78251C4.67859 3.94969 4.1761 4.25694 3.7744 4.67466C3.37271 5.09238 3.08534 5.6065 2.93998 6.16751C2.03698 9.66551 3.07048 14.059 6.12448 19.3495C9.17398 24.6325 12.4575 27.7225 15.9345 28.6945C16.4957 28.8508 17.0878 28.8592 17.6532 28.7188C18.2186 28.5785 18.738 28.2941 19.161 27.8935L20.4915 26.6335C20.8212 26.3212 21.0264 25.8998 21.0688 25.4477C21.1113 24.9955 20.9883 24.5433 20.7225 24.175L18.8025 21.5125C18.5734 21.1948 18.2505 20.9569 17.8793 20.832C17.508 20.7072 17.107 20.7018 16.7325 20.8165L13.71 21.742C11.955 22.264 10.362 20.8525 8.65198 17.89C7.49998 15.895 6.96298 14.35 7.09648 13.1485C7.16698 12.5245 7.45648 11.9485 7.91548 11.5195L10.1565 9.43001C10.443 9.16303 10.6388 8.81303 10.7162 8.42913C10.7937 8.04524 10.749 7.64672 10.5885 7.28951L9.23548 4.28051C9.04876 3.86562 8.71756 3.53277 8.3036 3.34401C7.88964 3.15524 7.42116 3.12343 6.98548 3.25451L5.23348 3.78251Z" />
+                                    </svg>
+                                    <span>+7 (495) 776-00-58</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link">
+                                    <svg class="header__icon" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.985 0C6.705 0 0 6.72 0 15C0 23.28 6.705 30 14.985 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 14.985 0ZM15 27C8.37 27 3 21.63 3 15C3 8.37 8.37 3 15 3C21.63 3 27 8.37 27 15C27 21.63 21.63 27 15 27ZM14.67 7.5H14.58C13.98 7.5 13.5 7.98 13.5 8.58V15.66C13.5 16.185 13.77 16.68 14.235 16.95L20.46 20.685C20.97 20.985 21.63 20.835 21.93 20.325C22.0053 20.2035 22.0554 20.0682 22.0773 19.9269C22.0992 19.7857 22.0925 19.6415 22.0575 19.503C22.0225 19.3644 21.96 19.2343 21.8737 19.1204C21.7873 19.0065 21.679 18.9111 21.555 18.84L15.75 15.39V8.58C15.75 7.98 15.27 7.5 14.67 7.5Z" />
+                                    </svg>
+                                    <span>Без выходных 9:00 — 21:00</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="mailto:ocean-vann@yandex.ru" class="header__link">
+                                    <svg class="header__icon" viewBox="0 0 30 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.875 1.04628e-08H25.125C26.3702 -8.15201e-05 27.5682 0.476331 28.4733 1.33151C29.3785 2.18668 29.922 3.35579 29.9925 4.599L30 4.875V19.125C30.0001 20.3702 29.5237 21.5682 28.6685 22.4733C27.8133 23.3785 26.6442 23.922 25.401 23.9925L25.125 24H4.875C3.62979 24.0001 2.43176 23.5237 1.52665 22.6685C0.62155 21.8133 0.077998 20.6442 0.00750018 19.401L1.04628e-08 19.125V4.875C-8.15201e-05 3.62979 0.476331 2.43176 1.33151 1.52665C2.18668 0.621551 3.35579 0.077998 4.599 0.00750018L4.875 1.04628e-08H25.125H4.875ZM27.75 8.0595L15.525 14.4945C15.387 14.5674 15.2353 14.6108 15.0795 14.6219C14.9238 14.633 14.7675 14.6116 14.6205 14.559L14.4765 14.496L2.25 8.061V19.125C2.25002 19.7838 2.49776 20.4185 2.94402 20.9031C3.39028 21.3877 4.00245 21.6868 4.659 21.741L4.875 21.75H25.125C25.784 21.7499 26.4189 21.502 26.9036 21.0554C27.3882 20.6089 27.6871 19.9963 27.741 19.3395L27.75 19.125V8.0595ZM25.125 2.25H4.875C4.21622 2.25002 3.58152 2.49776 3.09691 2.94402C2.6123 3.39028 2.31321 4.00245 2.259 4.659L2.25 4.875V5.5185L15 12.228L27.75 5.517V4.875C27.7499 4.21598 27.502 3.58108 27.0554 3.09644C26.6089 2.61179 25.9963 2.31285 25.3395 2.259L25.125 2.25Z" />
+                                    </svg>
+                                    <span>ocean-vann@yandex.ru</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="header__btn btn" data-popup="popup-callback">
+                            <span>Бесплатный вызов <br> замерщика</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav loading">
+                <div class="container">
+                    <div class="nav__inner">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="work.html" class="nav__link">Наши работы</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+                            <li class="nav__item">
+                                <a href="services.html" class="nav__link">Услуги</a>
+                                <span class="nav__icon toggle"></span>
+                                <ul class="nav__sub-list panel">
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Ремонт ванной комнаты и туалета под ключ в
+                                            Москве</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Ремонт санузла в Москве по доступным ценам</a>
+                                    </li>
+                                    <li class="nav__sub-item"><a href="#" class="nav__sub-link">Ремонт туалета под
+                                            ключ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a href="prices.html" class="nav__link">Цены</a></li>
+                            <li class="nav__item"><a href="thank.html" class="nav__link">Нас благодарят</a></li>
+                            <li class="nav__item"><a href="tips.html" class="nav__link">Полезные советы</a></li>
+                            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <section class="intro">
+                <h1 class="intro__title">РЕМОНТ ВАННЫХ КОМНАТ <br> И КВАРТИР ПОД КЛЮЧ</h1>
+                <picture>
+                    <source srcset="images/intro/01.webp" type="image/webp">
+                    <img class="intro__img" loading="lazy" src="images/intro/01.png" alt="">
+                </picture>
+            </section>
+            <div class="progress">
+                <div class="container">
+                    <div class="progress__items">
+                        <div class="progress__item">
+                            <picture>
+                                <source srcset="images/progress/01.webp" type="image/webp">
+                                <img class="progress__img" loading="lazy" src="images/progress/01.png" alt="">
+                            </picture>
+                            <img class="progress__icon" src="images/icons/calculator.svg" alt="">
+                            <div class="progress__number">01</div>
+                            <div class="progress__text">Бесплатная <br> смета</div>
+                        </div>
+                        <div class="progress__item">
+                            <picture>
+                                <source srcset="images/progress/02.webp" type="image/webp">
+                                <img class="progress__img" loading="lazy" src="images/progress/02.png" alt="">
+                            </picture>
+                            <img class="progress__icon" src="images/icons/repairs.svg" alt="">
+                            <div class="progress__number">02</div>
+                            <div class="progress__text progress__text--second">Делаем <br> ремонт</div>
+                        </div>
+                        <div class="progress__item">
+                            <picture>
+                                <source srcset="images/progress/03.webp" type="image/webp">
+                                <img class="progress__img" loading="lazy" src="images/progress/03.png" alt="">
+                            </picture>
+                            <img class="progress__icon" src="images/icons/project.svg" alt="">
+                            <div class="progress__number">03</div>
+                            <div class="progress__text progress__text--last">Сдаем <br> проект</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages">
+                <div class="container">
+                    <img class="advantages__img" src="images/general/lighthouse.png" alt="">
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/01.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/01.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Почему зима - лучшее время для ремонта?</div>
+                            <p class="advantages__text"><span>Только в феврале 2021</span> выгодные ценовые
+                                предложения и скидки! <span>Доставим стройматериал!</span></p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/02.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/02.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Понятная смета</div>
+                            <p class="advantages__text">Стоимость работ отражена в детальной смете, где чётко указано,
+                                какой вид работ будет выполнен, в каком объёме и сколько будет стоить.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/03.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/03.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Гарантия - лучший показатель качества работ!</div>
+                            <p class="advantages__text">Мы всегда отвечаем за качество наших ремонтных услуг. На все
+                                работы по <span>договору</span> гарантия 2 года. <span>Качество</span> - наша цель!
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/04.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/04.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Достойное качество при оптимальной цене</div>
+                            <p class="advantages__text">Наша цель - сделать для вас <span>наилучшее предложение</span>
+                                по соотношению цена/качество. <span>Ремонтируя квартиры, улучшаем качество жизни!</span>
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/05.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/05.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Опыт работы мастеров - строго от 5-ти лет</div>
+                            <p class="advantages__text">Нам абсолютно очевидно, что именно индивидуальный подход,
+                                профессионализм и руки грамотного мастера дают в итоге достойное качество наших услуг.
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/06.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/06.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Просто нас рекомендуют друзьям</div>
+                            <p class="advantages__text">Всегда выдерживаем <span>достойное качество и сроки
+                                    ремонта</span>, ведь ваша возможная рекомендация - лучший стимул в работе для нас.
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/07.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/07.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Быстрые сроки</div>
+                            <p class="advantages__text"><span>85% квартир</span>, ремонтируемых нами, происходит
+                                <span>без отселения</span>. Поэтому сроки ремонта и <span>неудобства всегда минимальны.
+                                    Минимум пыли и строительного мусора!</span>
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/08.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/08.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Online-калькулятор</div>
+                            <p class="advantages__text">Вы всегда можете сами оценить стоимость ремонта под ключ или
+                                стоимость различных отделочных работ с помощью <a href="#"
+                                    class="advantages__link">онлайн калькулятора</a></p>
+                        </div>
+                        <div class="advantages__item">
+                            <picture>
+                                <source srcset="images/advantages/09.webp" type="image/webp">
+                                <img class="advantages__icon" loading="lazy" src="images/advantages/09.png" alt="">
+                            </picture>
+                            <div class="advantages__heading">Официальный договор</div>
+                            <p class="advantages__text">Обязательно заключаем официальный договор согласно
+                                предварительной смете, так как <span>мы гордимся своими дизайн-проектами.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="foremens">
+                <div class="container">
+                    <div class="foremens__header">
+                        <h2 class="title">Наши прорабы</h2>
+                    </div>
+                    <div class="foremens__body">
+                        <div class="foremens__items">
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Олег Мошечков</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/01.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/01.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Юрий Мачульский</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/02.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/02.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Сергей Гайдай</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/03.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/03.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Евгений Красовский</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/04.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/04.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Юрий Архипов</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/05.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/05.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Валерий Бочарников</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/06.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/06.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Владимир Павленко</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/07.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/07.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="foremens__item">
+                                <div class="foremens__content">
+                                    <div class="foremens__name">Роман Гайдай</div>
+                                    <a class="foremens__btn btn" href="#">
+                                        <span>Посмотреть проекты</span>
+                                    </a>
+                                </div>
+                                <picture>
+                                    <source srcset="images/foremens/08.webp" type="image/webp">
+                                    <img class="foremens__img" loading="lazy" src="images/foremens/08.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="foremens__descr">
+                            <svg class="foremens__icon" viewBox="0 0 117 105" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.3834 104.948C6.00396 104.948 0 98.9448 0 91.5651C0 89.2331 0.62196 86.9227 1.79926 84.884L46.9158 6.73983C49.2977 2.61446 53.7364 0.0517578 58.5 0.0517578C63.2636 0.0517578 67.7023 2.61446 70.0842 6.73983L115.201 84.884C116.378 86.923 117 89.2331 117 91.5651C117 98.9445 110.996 104.948 103.617 104.948H13.3834V104.948Z"
+                                    fill="#75CFF9" />
+                                <path
+                                    d="M54.3596 11.0372L9.24277 89.1816C7.40255 92.3689 9.70277 96.3532 13.3832 96.3532H103.617C107.297 96.3532 109.597 92.3691 107.757 89.1816L62.6404 11.0372C60.8002 7.84992 56.1998 7.84992 54.3596 11.0372L9.24277 89.1816C7.40255 92.3689 9.70277 96.3532 13.3832 96.3532H103.617C107.297 96.3532 109.597 92.3691 107.757 89.1816L62.6404 11.0372C60.8002 7.84992 56.1998 7.84992 54.3596 11.0372Z"
+                                    fill="#CCEFFD" />
+                                <path
+                                    d="M115.201 84.884L70.0842 6.73983C67.7023 2.61446 63.2636 0.0517578 58.5 0.0517578C57.209 0.0517578 55.9422 0.2415 54.7334 0.59815C57.9849 1.55722 60.8148 3.73267 62.551 6.74006L107.668 84.8843C108.845 86.9232 109.467 89.2335 109.467 91.5655C109.467 98.945 103.463 104.949 96.0834 104.949H103.617C110.996 104.949 117 98.945 117 91.5655C117 89.2331 116.378 86.923 115.201 84.884Z"
+                                    fill="#6CBFF8" />
+                                <path
+                                    d="M107.757 89.1817L62.6405 11.0373C60.979 8.15911 57.0673 7.88085 54.9689 10.2001C55.1944 10.4494 55.3997 10.7279 55.5781 11.0373L100.695 89.1815C102.535 92.3687 100.235 96.3531 96.5542 96.3531H103.617C107.297 96.3531 109.598 92.369 107.757 89.1817Z"
+                                    fill="#AAE2FA" />
+                                <path
+                                    d="M60.1985 62.7348H56.3577C55.5731 62.7348 54.9236 62.1246 54.8749 61.3414L53.327 36.4901C53.2738 35.6348 53.953 34.9119 54.8099 34.9119H61.7461C62.603 34.9119 63.2824 35.6348 63.2289 36.4901L61.6811 61.3414C61.6326 62.1246 60.9831 62.7348 60.1985 62.7348ZM58.2782 70.598C55.8603 70.598 53.9 72.5583 53.9 74.9762C53.9 77.3944 55.8603 79.3544 58.2782 79.3544C60.6964 79.3544 62.6564 77.3942 62.6564 74.9762C62.6564 72.5583 60.6961 70.598 58.2782 70.598Z"
+                                    fill="#5FA7EE" />
+                            </svg>
+                            <div class="foremens__text">Просто позвоните по телефону <a href="tel:+74957760058"
+                                    class="foremens__link">+7 (495) 776-00-58</a>, или <a href="#" class="foremens__link"
+                                    data-popup="popup-callback">оставьте заявку</a> и наш прораб-сметчик в течение
+                                <span>5
+                                    минут</span> вам перезвонит и даст консультацию по ремонту ванной комнаты. Также вы
+                                можете пригласить его на составление сметы по ремонту ванной комнаты, кухни или
+                                квартиры.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions-articles">
+                <div class="container">
+                    <div class="questions-articles__inner">
+                        <div class="questions">
+                            <div class="questions__header">
+                                <h2 class="title">
+                                    <span class="title__text">Актуальные вопросы</span>
+                                </h2>
+                            </div>
+                            <div class="questions__body">
+                                <div class="questions__item">
+                                    <div class="questions__label accordion">
+                                        <span>Почему имеет смысл обратиться именно в "Океан ванн"?</span>
+                                        <svg class="questions__icon" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M48 24C48 30.3652 45.4714 36.4697 40.9706 40.9706C36.4697 45.4714 30.3652 48 24 48C17.6348 48 11.5303 45.4714 7.02944 40.9706C2.52856 36.4697 0 30.3652 0 24C0 17.6348 2.52856 11.5303 7.02944 7.02944C11.5303 2.52856 17.6348 0 24 0C30.3652 0 36.4697 2.52856 40.9706 7.02944C45.4714 11.5303 48 17.6348 48 24ZM25.5 13.5C25.5 13.1022 25.342 12.7206 25.0607 12.4393C24.7794 12.158 24.3978 12 24 12C23.6022 12 23.2206 12.158 22.9393 12.4393C22.658 12.7206 22.5 13.1022 22.5 13.5V22.5H13.5C13.1022 22.5 12.7206 22.658 12.4393 22.9393C12.158 23.2206 12 23.6022 12 24C12 24.3978 12.158 24.7794 12.4393 25.0607C12.7206 25.342 13.1022 25.5 13.5 25.5H22.5V34.5C22.5 34.8978 22.658 35.2794 22.9393 35.5607C23.2206 35.842 23.6022 36 24 36C24.3978 36 24.7794 35.842 25.0607 35.5607C25.342 35.2794 25.5 34.8978 25.5 34.5V25.5H34.5C34.8978 25.5 35.2794 25.342 35.5607 25.0607C35.842 24.7794 36 24.3978 36 24C36 23.6022 35.842 23.2206 35.5607 22.9393C35.2794 22.658 34.8978 22.5 34.5 22.5H25.5V13.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="questions__content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel quis,
+                                        mollitia
+                                        laborum explicabo alias, inventore pariatur ipsa ratione rerum aliquam molestias
+                                        neque dolorum reiciendis. Animi placeat magnam odio voluptas!
+                                    </div>
+                                </div>
+                                <div class="questions__item">
+                                    <div class="questions__label accordion">
+                                        <span>Могу ли я пригласить прораба-сметчика в выходные дни?</span>
+                                        <svg class="questions__icon" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M48 24C48 30.3652 45.4714 36.4697 40.9706 40.9706C36.4697 45.4714 30.3652 48 24 48C17.6348 48 11.5303 45.4714 7.02944 40.9706C2.52856 36.4697 0 30.3652 0 24C0 17.6348 2.52856 11.5303 7.02944 7.02944C11.5303 2.52856 17.6348 0 24 0C30.3652 0 36.4697 2.52856 40.9706 7.02944C45.4714 11.5303 48 17.6348 48 24ZM25.5 13.5C25.5 13.1022 25.342 12.7206 25.0607 12.4393C24.7794 12.158 24.3978 12 24 12C23.6022 12 23.2206 12.158 22.9393 12.4393C22.658 12.7206 22.5 13.1022 22.5 13.5V22.5H13.5C13.1022 22.5 12.7206 22.658 12.4393 22.9393C12.158 23.2206 12 23.6022 12 24C12 24.3978 12.158 24.7794 12.4393 25.0607C12.7206 25.342 13.1022 25.5 13.5 25.5H22.5V34.5C22.5 34.8978 22.658 35.2794 22.9393 35.5607C23.2206 35.842 23.6022 36 24 36C24.3978 36 24.7794 35.842 25.0607 35.5607C25.342 35.2794 25.5 34.8978 25.5 34.5V25.5H34.5C34.8978 25.5 35.2794 25.342 35.5607 25.0607C35.842 24.7794 36 24.3978 36 24C36 23.6022 35.842 23.2206 35.5607 22.9393C35.2794 22.658 34.8978 22.5 34.5 22.5H25.5V13.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="questions__content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel quis,
+                                        mollitia
+                                        laborum explicabo alias, inventore pariatur ipsa ratione rerum aliquam molestias
+                                        neque dolorum reiciendis. Animi placeat magnam odio voluptas!
+                                    </div>
+                                </div>
+                                <div class="questions__item">
+                                    <div class="questions__label accordion">
+                                        <span>Какие действия следует предпринять при работе с подрядчиком?</span>
+                                        <svg class="questions__icon" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M48 24C48 30.3652 45.4714 36.4697 40.9706 40.9706C36.4697 45.4714 30.3652 48 24 48C17.6348 48 11.5303 45.4714 7.02944 40.9706C2.52856 36.4697 0 30.3652 0 24C0 17.6348 2.52856 11.5303 7.02944 7.02944C11.5303 2.52856 17.6348 0 24 0C30.3652 0 36.4697 2.52856 40.9706 7.02944C45.4714 11.5303 48 17.6348 48 24ZM25.5 13.5C25.5 13.1022 25.342 12.7206 25.0607 12.4393C24.7794 12.158 24.3978 12 24 12C23.6022 12 23.2206 12.158 22.9393 12.4393C22.658 12.7206 22.5 13.1022 22.5 13.5V22.5H13.5C13.1022 22.5 12.7206 22.658 12.4393 22.9393C12.158 23.2206 12 23.6022 12 24C12 24.3978 12.158 24.7794 12.4393 25.0607C12.7206 25.342 13.1022 25.5 13.5 25.5H22.5V34.5C22.5 34.8978 22.658 35.2794 22.9393 35.5607C23.2206 35.842 23.6022 36 24 36C24.3978 36 24.7794 35.842 25.0607 35.5607C25.342 35.2794 25.5 34.8978 25.5 34.5V25.5H34.5C34.8978 25.5 35.2794 25.342 35.5607 25.0607C35.842 24.7794 36 24.3978 36 24C36 23.6022 35.842 23.2206 35.5607 22.9393C35.2794 22.658 34.8978 22.5 34.5 22.5H25.5V13.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="questions__content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel quis,
+                                        mollitia
+                                        laborum explicabo alias, inventore pariatur ipsa ratione rerum aliquam molestias
+                                        neque dolorum reiciendis. Animi placeat magnam odio voluptas!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles">
+                            <div class="articles__header">
+                                <h2 class="title">
+                                    <span class="title__text">Последние <span class="title__color">статьи</span></span>
+                                </h2>
+                            </div>
+                            <div class="articles__body">
+                                <div class="articles__item">
+                                    <a href="#" class="articles__img">
+                                        <picture>
+                                            <source srcset="images/articles/01.webp" type="image/webp">
+                                            <img loading="lazy" src="images/articles/01.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="articles__content">
+                                        <span class="articles__date">14.03.2017</span>
+                                        <a href="#" class="articles__text">Советы по ремонту в ванной комнате небольшого
+                                            размера</a>
+                                    </div>
+                                </div>
+                                <div class="articles__item">
+                                    <a href="#" class="articles__img">
+                                        <picture>
+                                            <source srcset="images/articles/02.webp" type="image/webp">
+                                            <img loading="lazy" src="images/articles/02.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="articles__content">
+                                        <span class="articles__date">14.03.2017</span>
+                                        <a href="#" class="articles__text">Ремонт ванной комнаты в хрущевке:
+                                            особенности, проблемы и как их решить</a>
+                                    </div>
+                                </div>
+                                <div class="articles__item">
+                                    <a href="#" class="articles__img">
+                                        <picture>
+                                            <source srcset="images/articles/03.webp" type="image/webp">
+                                            <img loading="lazy" src="images/articles/03.png" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="articles__content">
+                                        <span class="articles__date">14.03.2017</span>
+                                        <a href="#" class="articles__text">Как правильно выбрать смеситель</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="repairs">
+                <div class="container">
+                    <div class="repairs__header">
+                        <h2 class="title">Ремонт ванной комнаты под ключ в Москве</h2>
+                    </div>
+                    <div class="repairs__body">
+                        <div class="repairs__block">
+                            <div class="repairs__img">
+                                <picture>
+                                    <source srcset="images/repairs/01.webp" type="image/webp">
+                                    <img loading="lazy" src="images/repairs/01.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="repairs__content">
+                                <div class="repairs__text repairs__text--semibold">Наша компания предлагает ремонт
+                                    ванной комнаты под ключ и ремонт квартир. Качество выполняемых работ и гарантия -
+                                    главный принцип работы наших мастеров. Просто позвоните <a href="tel:+74957760058"
+                                        class="repairs__link">8-(495)-776-00-58!</a></div>
+                                <p class="repairs__text">Сталкиваясь с необходимостью проведения ремонта и отделки
+                                    ванной комнаты, у
+                                    владельца квартиры возникает масса вопросов. Например таких как:</p>
+                                <ul class="repairs__list">
+                                    <li class="repairs__item">Как грамотно составить дизайн-проект ремонтируемого
+                                        помещения?</li>
+                                    <li class="repairs__item">Как определить полную стоимость всех работ «под ключ»?
+                                    </li>
+                                    <li class="repairs__item">Как правильно рассчитать количество необходимых отделочных
+                                        материалов?</li>
+                                    <li class="repairs__item">Как уменьшить или исключить «дополнительные работы»?</li>
+                                    <li class="repairs__item">Как выбрать облицовочную плитку, какого цвета и размера,
+                                        какая будет «раскладка»?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="repairs__block">
+                            <div class="repairs__content repairs__content--small">
+                                <div class="repairs__text repairs__text--small">
+                                    <p>К сожалению, это далеко не все задачи, которые приходится решать при таких
+                                        мероприятиях, как ремонт ванной комнаты «под ключ». Самый простой и быстрый
+                                        способ начать решать поставленные задачи – пригласить технического специалиста
+                                        компании «Океан ванн» на бесплатные замеры. Наш прораб-сметчик приедет в любой
+                                        удобный для вас день, сделает замеры, обсудит необходимый перечень работ,
+                                        оптимизирует смету и сделает лучшее предложение по соотношению «цена/качество».
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="repairs__img repairs__img--big">
+                                <picture>
+                                    <source srcset="images/repairs/02.webp" type="image/webp">
+                                    <img loading="lazy" src="images/repairs/02.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="prices">
+                <div class="container">
+                    <div class="prices__header">
+                        <h2 class="title">
+                            <span class="title__text">Цены на ремонт ванной комнаты</span>
+                        </h2>
+                    </div>
+                    <div class="prices__body">
+                        <div class="prices__item">
+                            <div class="prices__inner">
+                                <div class="prices__img">
+                                    <picture>
+                                        <source srcset="images/prices/01.webp" type="image/webp">
+                                        <img loading="lazy" src="images/prices/01.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="prices__title">Ремонт ванной комнаты</div>
+                                <div class="prices__content">
+                                    <div class="prices__row">
+                                        <div class="prices__col" style="color: #082F76;">
+                                            <div class="prices__text">Базовый</div>
+                                            <div class="prices__value">от 29 000 Р.</div>
+                                        </div>
+                                        <div class="prices__col" style="color: #08763B;">
+                                            <div class="prices__text">Стандарт</div>
+                                            <div class="prices__value">от 49 000 Р.</div>
+                                        </div>
+                                        <div class="prices__col" style="color: #CB5805;">
+                                            <div class="prices__text">Премиум</div>
+                                            <div class="prices__value">от 69 000 Р.</div>
+                                        </div>
+                                    </div>
+                                    <a class="prices__btn btn" href="#">
+                                        <span>Подробный список работ</span>
+                                    </a>
+                                    <button class="prices__btn prices__btn--blue btn btn--blue"
+                                        data-popup="popup-callback">Бесплатный вызов замерщика</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices__item">
+                            <div class="prices__inner">
+                                <div class="prices__img">
+                                    <picture>
+                                        <source srcset="images/prices/02.webp" type="image/webp">
+                                        <img loading="lazy" src="images/prices/02.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="prices__title">Ремонт туалета</div>
+                                <div class="prices__content">
+                                    <div class="prices__row">
+                                        <div class="prices__col" style="color: #082F76;">
+                                            <div class="prices__text">Базовый</div>
+                                            <div class="prices__value">от 19 000 Р.</div>
+                                        </div>
+                                        <div class="prices__col" style="color: #08763B;">
+                                            <div class="prices__text">Стандарт</div>
+                                            <div class="prices__value">от 27 000 Р.</div>
+                                        </div>
+                                        <div class="prices__col" style="color: #CB5805;">
+                                            <div class="prices__text">Премиум</div>
+                                            <div class="prices__value">от 31 000 Р.</div>
+                                        </div>
+                                    </div>
+                                    <a class="prices__btn btn" href="#">
+                                        <span>Подробный список работ</span>
+                                    </a>
+                                    <button class="prices__btn prices__btn--blue btn btn--blue"
+                                        data-popup="popup-callback">Бесплатный вызов замерщика</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices__item">
+                            <div class="prices__inner">
+                                <div class="prices__img">
+                                    <picture>
+                                        <source srcset="images/prices/03.webp" type="image/webp">
+                                        <img loading="lazy" src="images/prices/03.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="prices__title">Ремонт совмещенного санузла</div>
+                                <div class="prices__content">
+                                    <div class="prices__row">
+                                        <div class="prices__col" style="color: #082F76;">
+                                            <div class="prices__text">Базовый</div>
+                                            <div class="prices__value">от 48 000 Р.</div>
+                                        </div>
+                                        <div class="prices__col" style="color: #08763B;">
+                                            <div class="prices__text">Стандарт</div>
+                                            <div class="prices__value">от 67 000 Р.</div>
+                                        </div>
+                                        <div class="prices__col" style="color: #CB5805;">
+                                            <div class="prices__text">Премиум</div>
+                                            <div class="prices__value">от 76 000 Р.</div>
+                                        </div>
+                                    </div>
+                                    <a class="prices__btn btn" href="#">
+                                        <span>Подробный список работ</span>
+                                    </a>
+                                    <button class="prices__btn prices__btn--blue btn btn--blue"
+                                        data-popup="popup-callback">Бесплатный вызов замерщика</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bath">
+                <div class="container">
+                    <div class="bath__header">
+                        <h2 class="title">Ремонт ванны под ключ в компании “Океан ванн”</h2>
+                    </div>
+                    <div class="bath__body">
+                        <p class="bath__descr">Вы хотите окружить себя комфортом? Достаточно ремонт ванной комнаты
+                            заказать именно нам!</p>
+                        <p class="bath__text">Плюсы нашего предложения в том, что:</p>
+                        <ul class="bath__list">
+                            <li class="bath__item">ремонт ванной и санузла — это основное направление деятельности
+                                компании, располагающей штатом высококлассных специалистов разного профиля: сантехников,
+                                электриков, отделочников и плиточников;</li>
+                            <li class="bath__item">когда выполняется ремонт ванны и туалета под ключ, цена с материалами
+                                указывается в смете;</li>
+                            <li class="bath__item">чистая работа. Наши клиенты избавлены от необходимости уборки
+                                строительного мусора;</li>
+                            <li class="bath__item">ответственный подход. В нашем рабочем графике нет места срывам сроков
+                                и ненужным простоям.</li>
+                            <li class="bath__item">опыт и профессионализм сотрудников позволяют реализовывать проекты
+                                любой сложности. Мы готовы предложить стандартные решения, предполагающие ремонт ванной
+                                комнаты недорого и самые смелые дизайнерские идеи для обустройства эксклюзивного
+                                интерьера.</li>
+                        </ul>
+                        <p class="bath__text">Увидеть возможные варианты, как может выглядеть ремонт ванной комнаты под
+                            ключ с фото и ценами можно в нашем каталоге.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="examples">
+                <div class="container">
+                    <h2 class="examples__title title">
+                        <span class="title__text">Примеры наших работ</span>
+                    </h2>
+                    <div class="examples__items">
+                        <div class="examples__item">
+                            <div class="examples__inner">
+                                <div class="examples__header">
+                                    <picture>
+                                        <source srcset="images/examples/01.webp" type="image/webp">
+                                        <img class="examples__img" loading="lazy" src="images/examples/01.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="examples__body">
+                                    <div class="examples__row">
+                                        <div class="examples__name">Прораб: <a href="#" class="examples__link">Олег
+                                                Мошечков</a></div>
+                                        <a href="#" class="examples__photo">
+                                            <picture>
+                                                <source srcset="images/foremens/11.webp" type="image/webp">
+                                                <img loading="lazy" src="images/foremens/11.png" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="examples__text">Ремонт ванной комнаты, загородный дом, Рублёвское шоссе
+                                    </div>
+                                </div>
+                                <div class="examples__footer">
+                                    <a class="examples__btn btn" href="#">
+                                        <span>Подробнее о проекте</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__inner">
+                                <div class="examples__header">
+                                    <picture>
+                                        <source srcset="images/examples/02.webp" type="image/webp">
+                                        <img class="examples__img" loading="lazy" src="images/examples/02.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="examples__body">
+                                    <div class="examples__row">
+                                        <div class="examples__name">Прораб: <a href="#" class="examples__link">Юрий
+                                                Мачульский</a></div>
+                                        <a href="#" class="examples__photo">
+                                            <picture>
+                                                <source srcset="images/foremens/12.webp" type="image/webp">
+                                                <img loading="lazy" src="images/foremens/12.png" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="examples__text">Ремонт ванной комнаты, Ленинский проспект</div>
+                                </div>
+                                <div class="examples__footer">
+                                    <a class="examples__btn btn" href="#">
+                                        <span>Подробнее о проекте</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__inner">
+                                <div class="examples__header">
+                                    <picture>
+                                        <source srcset="images/examples/03.webp" type="image/webp">
+                                        <img class="examples__img" loading="lazy" src="images/examples/03.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="examples__body">
+                                    <div class="examples__row">
+                                        <div class="examples__name">Прораб: <a href="#" class="examples__link">Сергей
+                                                Гайдай</a></div>
+                                        <a href="#" class="examples__photo">
+                                            <picture>
+                                                <source srcset="images/foremens/09.webp" type="image/webp">
+                                                <img loading="lazy" src="images/foremens/09.png" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="examples__text">Кухня под ключ, <br> Новая Рига</div>
+                                </div>
+                                <div class="examples__footer">
+                                    <a class="examples__btn btn" href="#">
+                                        <span>Подробнее о проекте</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__inner">
+                                <div class="examples__header">
+                                    <picture>
+                                        <source srcset="images/examples/04.webp" type="image/webp">
+                                        <img class="examples__img" loading="lazy" src="images/examples/04.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="examples__body">
+                                    <div class="examples__row">
+                                        <div class="examples__name">Прораб: <a href="#" class="examples__link">Сергей
+                                                Гайдай</a></div>
+                                        <a href="#" class="examples__photo">
+                                            <picture>
+                                                <source srcset="images/foremens/09.webp" type="image/webp">
+                                                <img loading="lazy" src="images/foremens/09.png" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="examples__text">Ремонт ванной комнаты ул. Поликарпова</div>
+                                </div>
+                                <div class="examples__footer">
+                                    <a class="examples__btn btn" href="#">
+                                        <span>Подробнее о проекте</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__inner">
+                                <div class="examples__header">
+                                    <picture>
+                                        <source srcset="images/examples/05.webp" type="image/webp">
+                                        <img class="examples__img" loading="lazy" src="images/examples/05.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="examples__body">
+                                    <div class="examples__row">
+                                        <div class="examples__name">Прораб: <a href="#" class="examples__link">Юрий
+                                                Архипов</a></div>
+                                        <a href="#" class="examples__photo">
+                                            <picture>
+                                                <source srcset="images/foremens/10.webp" type="image/webp">
+                                                <img loading="lazy" src="images/foremens/10.png" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="examples__text">Ремонт ванной комнаты, Стремянный пер.</div>
+                                </div>
+                                <div class="examples__footer">
+                                    <a class="examples__btn btn" href="#">
+                                        <span>Подробнее о проекте</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__inner">
+                                <div class="examples__header">
+                                    <picture>
+                                        <source srcset="images/examples/06.webp" type="image/webp">
+                                        <img class="examples__img" loading="lazy" src="images/examples/06.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="examples__body">
+                                    <div class="examples__row">
+                                        <div class="examples__name">Прораб: <a href="#" class="examples__link">Юрий
+                                                Архипов</a></div>
+                                        <a href="#" class="examples__photo">
+                                            <picture>
+                                                <source srcset="images/foremens/10.webp" type="image/webp">
+                                                <img loading="lazy" src="images/foremens/10.png" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="examples__text">Ремонт ванной комнаты, ул. Соловьиная Роща</div>
+                                </div>
+                                <div class="examples__footer">
+                                    <a class="examples__btn btn" href="#">
+                                        <span>Подробнее о проекте</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="examples__bottom">
+                        <a class="examples__btn examples__btn--big btn" href="#">
+                            <span>Больше проектов</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="stages">
+                <div class="container">
+                    <h2 class="stages__title title">Основные этапы ремонта ванной комнаты под ключ</h2>
+                    <p class="stages__paragraph">Благоустройство любого помещения требует соблюдения определенной
+                        последовательности действий, что дает возможность выделить основные этапы проводимой работы.
+                        Такой подход к осуществлению поставленной задачи значительно упрощает ее выполнение и позволяет
+                        детально продумать каждое действие, рассчитать все предполагаемые расходы. Точно также как и в
+                        других помещениях, ремонт ванной под ключ должен проводиться согласно установленному алгоритму,
+                        нарушение которого может сказаться на качестве и привести к непредвиденным финансовым расходам.
+                    </p>
+                    <p class="stages__paragraph">Чтобы после ремонта ванны не возникало никаких неприятных моментов,
+                        нужно заранее продумать все нюансы предстоящей работы и учесть особенные условия данного
+                        помещения. Если для преображения других комнат может потребоваться лишь стандартная отделка,
+                        обновленный интерьер санузла — это не только внешняя облицовка, но и безупречно подведенные
+                        коммуникации. Поэтому перечень этапов ремонта ванной комнаты включает в себя как минимум 5
+                        основных пунктов, каждый из которых имеет огромное значение.</p>
+                    <p class="stages__descr">Последовательность ремонта в ванной можно условно разделить на следующие
+                        этапы:</p>
+                    <div class="stages__item">
+                        <div class="stages__img">
+                            <picture>
+                                <source srcset="images/stages/01.webp" type="image/webp">
+                                <img loading="lazy" src="images/stages/01.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="stages__content">
+                            <div class="stages__number">1 этап</div>
+                            <div class="stages__heading">Разработка дизайн-проекта</div>
+                            <p class="stages__text">Чтобы в процессе работы не возникало сложностей и затруднений с
+                                технической точки зрения, ремонт ванной под ключ должен начинаться с создания проекта.
+                                Масштабный чертеж с подробным описанием окажется полезной инструкцией для каждого
+                                мастера, ведь расположение каждой детали будущего санузла в нем будет рассчитано до
+                                миллиметра</p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img">
+                            <picture>
+                                <source srcset="images/stages/02.webp" type="image/webp">
+                                <img loading="lazy" src="images/stages/02.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="stages__content">
+                            <div class="stages__number">2 этап</div>
+                            <div class="stages__heading">Демонтажные работы и подготовка поверхностей</div>
+                            <p class="stages__text">Демонтажные работы и подготовка поверхностей при ремонте ванны под
+                                ключ направлены на освобождение площади, где будут проводиться ремонтные работы.
+                                Использование специального инструмента позволит максимально аккуратно произвести
+                                удаление старой отделки, исключая повреждение оснований. В список действий, которые
+                                выполняются на данном этапе, включена и подготовка стен к прокладке электрической
+                                проводки, облегчающая дальнейшие электромонтажные работы</p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img">
+                            <picture>
+                                <source srcset="images/stages/03.webp" type="image/webp">
+                                <img loading="lazy" src="images/stages/03.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="stages__content">
+                            <div class="stages__number">3 этап</div>
+                            <div class="stages__heading">Замена коммуникационных систем</div>
+                            <p class="stages__text">Этот шаг начинается с демонтажа старых коммуникационных линий. Новая
+                                разводка водяных и канализационных линий осуществляется согласно плану, а электрические
+                                провода укладываются в заранее подготовленные штробы. В ходе этого этапа производится
+                                монтаж водяных фильтров и отстойников. Замена старых труб когда выполняется ремонт
+                                ванной комнаты под ключ позволит исключить риск протечки из-за повреждения старой
+                                системы</p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img">
+                            <picture>
+                                <source srcset="images/stages/04.webp" type="image/webp">
+                                <img loading="lazy" src="images/stages/04.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="stages__content">
+                            <div class="stages__number">4 этап</div>
+                            <div class="stages__heading">Отделочные работы</div>
+                            <p class="stages__text">Отделочные работы, когда выполняется ремонт ванной, разделяются на
+                                черновую и финишную отделку. В ходе предварительной отделки выполняется гидроизоляция
+                                поверхностей с применением специальных материалов. Затем порядок работ подразумевает
+                                возведение перегородок, а также сооружение каркасов для подвесных потолков, если таковые
+                                предусмотрены проектом. Последовательность выполнения этого этапа зависит от выбранных
+                                материалов отделки. Так, если для выравнивания стен будет использован гипсокартон,
+                                стяжка и укладка напольного покрытия выполняется в первую очередь. Если предполагается
+                                этап оштукатуривания стен и последующей шпаклевки, работы с полом будут в завершении.
+                                Прежде чем переходить к финишной отделке, подразумевающей облицовку поверхностей и
+                                укладку напольного покрытия, помещение убирают от строительного мусора. Работа с
+                                потолком выполняется в последнюю очередь</p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img">
+                            <picture>
+                                <source srcset="images/stages/05.webp" type="image/webp">
+                                <img loading="lazy" src="images/stages/05.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="stages__content">
+                            <div class="stages__number">5 этап</div>
+                            <div class="stages__heading">Монтаж сантехники и вспомогательного оборудования</div>
+                            <p class="stages__text">Этот этап считается завершающим этапом ремонта ванной. В практически
+                                полностью подготовленном и отделанном помещении производится монтаж ванной либо душевой
+                                кабины, унитаза, мебели, зеркала и прочей фурнитуры, монтируются розетки. Останется
+                                только провести финишную уборку и можно пользоваться максимально комфортным и
+                                функциональным помещением</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="performance">
+                <div class="container">
+                    <h2 class="performance__title title">
+                        <span class="title__text">Как выполнить ремонт санузла с «Океан ванн»</span>
+                    </h2>
+                    <div class="performance__items">
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/smartphone.svg" alt="">
+                            </div>
+                            <div class="performance__text">Звонок или заявка</div>
+                            <div class="performance__number">
+                                <span>01</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/employee.svg" alt="">
+                            </div>
+                            <div class="performance__text">Бесплатный выезд сметчика - прораба</div>
+                            <div class="performance__number">
+                                <span>02</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/calculator2.svg" alt="">
+                            </div>
+                            <div class="performance__text">Бесплатный расчет сметы</div>
+                            <div class="performance__number">
+                                <span>03</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/insurance.svg" alt="">
+                            </div>
+                            <div class="performance__text">Подписание договора</div>
+                            <div class="performance__number">
+                                <span>04</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/wrench.svg" alt="">
+                            </div>
+                            <div class="performance__text">Работы начинаются в течение 3-x дней</div>
+                            <div class="performance__number">
+                                <span>05</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="performance__text">Ремонт от 10 дней</div>
+                            <div class="performance__number">
+                                <span>06</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/vector.svg" alt="">
+                            </div>
+                            <div class="performance__text">Сдача работы</div>
+                            <div class="performance__number">
+                                <span>07</span>
+                            </div>
+                        </div>
+                        <div class="performance__item">
+                            <div class="performance__img">
+                                <img src="images/general/range.png" alt="">
+                                <img class="performance__icon" src="images/icons/building.svg" alt="">
+                            </div>
+                            <div class="performance__text">Вы живете в обновленной квартире</div>
+                            <div class="performance__number">
+                                <span>08</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="estimator">
+                <div class="container">
+                    <h2 class="estimator__title title">Наш сметчик сможет <span>бесплатно</span> приехать к вам домой,
+                        произвести замеры и озвучить стоимость ремонта</h2>
+                    <div class="estimator__inner">
+                        <div class="estimator__img">
+                            <picture>
+                                <source srcset="images/general/photo.webp" type="image/webp">
+                                <img loading="lazy" src="images/general/photo.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="estimator__content">
+                            <div class="estimator__header">
+                                <div class="estimator__heading">Закажите <span>бесплатный</span> выезд сметчика!</div>
+                                <p class="estimator__text">Мы свяжемся с Вами в течение часа</p>
+                            </div>
+                            <div class="estimator__body">
+                                <form class="form">
+                                    <div class="form__item">
+                                        <input class="form__input" type="text" name="name" placeholder="Введите имя">
+                                    </div>
+                                    <div class="form__item">
+                                        <input class="form__input" type="tel" name="tel" placeholder="Введите телефон">
+                                    </div>
+                                    <label class="checkbox">
+                                        <span class="checkbox__text">Согласен с обработкой моих персональных данных в
+                                            соответствии с <a href="#" class="checkbox__link">политикой
+                                                конфиденциальности.</a></span>
+                                        <input class="checkbox__input" type="checkbox" name="agree">
+                                        <span class="checkbox__custom"></span>
+                                    </label>
+                                    <button class="form__btn btn btn--blue" type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__left">
+                        <div class="footer__logo">
+                            <span class="footer__text">Океан ванн</span>
+                            <span class="footer__descr">Ремонт ванных комнат и <br> квартир под ключ</span>
+                        </div>
+                        <div class="social">
+                            <div class="social__title">Посетите наши группы:</div>
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__link" target="_blank" rel="nofollow">
+                                        <svg class="social__icon" viewBox="0 0 49 49" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.5 0C10.969 0 0 10.969 0 24.5C0 38.031 10.969 49 24.5 49C38.031 49 49 38.031 49 24.5C49 10.969 38.031 0 24.5 0ZM27.0537 25.5762V38.9055H21.5387V25.5767H18.7834V20.9833H21.5387V18.2255C21.5387 14.4783 23.0945 12.25 27.5148 12.25H31.1948V16.8439H28.8945C27.1738 16.8439 27.06 17.4858 27.06 18.6838L27.0537 20.9828H31.2208L30.7332 25.5762H27.0537Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" target="_blank" rel="nofollow">
+                                        <svg class="social__icon" viewBox="0 0 50 49" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.8334 0C11.3024 0 0.333374 10.969 0.333374 24.5C0.333374 38.031 11.3024 49 24.8334 49C38.3643 49 49.3334 38.031 49.3334 24.5C49.3334 10.969 38.3643 0 24.8334 0ZM26.8282 32.2343C26.5866 32.489 26.115 32.5404 26.115 32.5404H24.553C24.553 32.5404 21.1071 32.7437 18.0714 29.6422C14.7609 26.2584 11.8377 19.5447 11.8377 19.5447C11.8377 19.5447 11.669 19.1043 11.8517 18.8922C12.0575 18.6526 12.6187 18.6376 12.6187 18.6376L16.3522 18.6137C16.3522 18.6137 16.7037 18.6702 16.9555 18.8521C17.1639 19.0027 17.2802 19.2824 17.2802 19.2824C17.2802 19.2824 17.8835 20.7805 18.6824 22.1355C20.243 24.7816 20.969 25.36 21.4982 25.0765C22.2702 24.6637 22.0389 21.3363 22.0389 21.3363C22.0389 21.3363 22.0529 20.1293 21.6503 19.5911C21.3384 19.1745 20.7505 19.0528 20.491 19.019C20.2801 18.9914 20.6252 18.5121 21.0726 18.2975C21.7449 17.9751 22.931 17.9563 24.3332 17.9701C25.426 17.9814 25.7405 18.0479 26.1674 18.1495C27.1582 18.3842 27.1273 19.1363 27.0605 20.7596C27.0406 21.2451 27.0174 21.8085 27.0174 22.4592C27.0174 22.6055 27.013 22.7614 27.0086 22.9217C26.9854 23.7534 26.9589 24.7057 27.5172 25.0602C27.8035 25.2408 28.5026 25.0865 30.2525 22.1707C31.082 20.788 31.7032 19.1633 31.7032 19.1633C31.7032 19.1633 31.84 18.8734 32.0509 18.7492C32.2669 18.6225 32.5583 18.6614 32.5583 18.6614L36.4874 18.6376C36.4874 18.6376 37.6685 18.4983 37.8589 19.0227C38.0596 19.571 37.418 20.8533 35.8126 22.9536C34.2897 24.9464 33.5486 25.6802 33.6166 26.3291C33.6663 26.8033 34.1481 27.2321 35.0725 28.0738C37.0023 29.8326 37.5195 30.7579 37.6438 30.9802C37.6541 30.9986 37.6617 31.0122 37.6672 31.021C38.5325 32.43 36.7073 32.5404 36.7073 32.5404L33.2166 32.5881C33.2166 32.5881 32.4676 32.7336 31.4808 32.0687C30.9639 31.7207 30.4588 31.1522 29.9777 30.6108C29.243 29.7839 28.5643 29.0201 27.985 29.2005C27.0123 29.5042 27.0417 31.5605 27.0417 31.5605C27.0417 31.5605 27.0493 32.0009 26.8282 32.2343Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" target="_blank" rel="nofollow">
+                                        <svg class="social__icon" viewBox="0 0 50 49" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M25.1666 0C11.6356 0 0.666626 10.969 0.666626 24.5C0.666626 38.031 11.6356 49 25.1666 49C38.6976 49 49.6666 38.031 49.6666 24.5C49.6666 10.969 38.6976 0 25.1666 0ZM24.4843 20.7614L24.4329 19.9136C24.2787 17.7164 25.6325 15.7095 27.7747 14.9309C28.563 14.6541 29.8997 14.6195 30.7737 14.8617C31.1164 14.9655 31.7676 15.3115 32.2303 15.623L33.0701 16.1939L33.9955 15.8998C34.5096 15.7441 35.1951 15.4846 35.5036 15.3115C35.7949 15.1558 36.0519 15.0693 36.0519 15.1212C36.0519 15.4153 35.4179 16.4188 34.8866 16.9724C34.1669 17.751 34.3725 17.8202 35.8292 17.3012C36.7032 17.0071 36.7203 17.0071 36.5489 17.3358C36.4461 17.5088 35.9148 18.1143 35.3493 18.668C34.3896 19.6195 34.3382 19.7233 34.3382 20.5192C34.3382 21.7476 33.7556 24.3081 33.1729 25.7095C32.0932 28.3393 29.7797 31.0556 27.4662 32.4224C24.2101 34.3428 19.8744 34.8272 16.2242 33.7026C15.0074 33.322 12.9167 32.3531 12.9167 32.1801C12.9167 32.1282 13.5507 32.059 14.3219 32.0417C15.9328 32.0071 17.5437 31.5573 18.9147 30.7614L19.8401 30.2078L18.7776 29.8445C17.2695 29.3255 15.9157 28.1317 15.5729 27.0071C15.4701 26.6438 15.5044 26.6265 16.4641 26.6265L17.458 26.6092L16.6183 26.2113C15.6244 25.7095 14.7161 24.8618 14.2705 23.9967C13.9449 23.3739 13.5336 21.7995 13.6536 21.6784C13.6878 21.6265 14.0477 21.7303 14.459 21.8687C15.6415 22.3012 15.7957 22.1974 15.1102 21.4707C13.8249 20.1559 13.4308 18.2008 14.0477 16.3496L14.3391 15.5192L15.4701 16.6437C17.7836 18.9102 20.5085 20.2597 23.6274 20.6576L24.4843 20.7614Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" target="_blank" rel="nofollow">
+                                        <svg class="social__icon" viewBox="0 0 49 49" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 24.5C0 10.969 10.969 0 24.5 0C38.031 0 49 10.969 49 24.5C49 38.031 38.031 49 24.5 49C10.969 49 0 38.031 0 24.5ZM24.4833 24.8933C28.0961 24.8933 31.0329 22.0581 31.0329 18.5726C31.0329 15.086 28.0961 12.25 24.4833 12.25C20.8713 12.25 17.9337 15.086 17.9337 18.5726C17.9337 22.0581 20.8713 24.8933 24.4833 24.8933ZM30.9533 28.5334C29.769 29.2514 28.4833 29.7606 27.1501 30.0537L30.8115 33.5884C31.5615 34.3109 31.5615 35.4844 30.8115 36.2076C30.0622 36.9309 28.8477 36.9309 28.0992 36.2076L24.4994 32.7342L20.9026 36.2076C20.5276 36.5689 20.0362 36.7497 19.5447 36.7497C19.0541 36.7497 18.5635 36.5689 18.1884 36.2076C17.4391 35.4844 17.4391 34.3117 18.1876 33.5884L21.8494 30.0537C20.5162 29.7606 19.2304 29.2506 18.0462 28.5334C17.1499 27.9879 16.8807 26.8451 17.4454 25.9793C18.0085 25.1122 19.1928 24.8512 20.0906 25.3967C22.7719 27.0248 26.226 27.0252 28.9089 25.3967C29.8067 24.8512 30.9906 25.1122 31.5549 25.9793C32.1196 26.8444 31.8496 27.9879 30.9533 28.5334Z" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.4833 15.9551C25.9788 15.9551 27.1952 17.1289 27.1952 18.5724C27.1952 20.0148 25.9788 21.1894 24.4833 21.1894C22.9891 21.1894 21.7715 20.0148 21.7715 18.5724C21.7715 17.1289 22.9891 15.9551 24.4833 15.9551Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" target="_blank" rel="nofollow">
+                                        <svg class="social__icon" viewBox="0 0 49 49" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.5 0C10.969 0 0 10.969 0 24.5C0 38.031 10.969 49 24.5 49C38.031 49 49 38.031 49 24.5C49 10.969 38.031 0 24.5 0ZM19.1134 11.5123C20.5072 11.4489 20.9525 11.4333 24.5012 11.4333H24.4972C28.047 11.4333 28.4907 11.4489 29.8845 11.5123C31.2756 11.576 32.2256 11.7962 33.0586 12.1193C33.9189 12.4528 34.6457 12.8993 35.3725 13.6261C36.0994 14.3524 36.5458 15.0814 36.8807 15.9408C37.2019 16.7717 37.4224 17.7212 37.4877 19.1123C37.5504 20.5061 37.5667 20.9514 37.5667 24.5001C37.5667 28.0489 37.5504 28.4931 37.4877 29.8869C37.4224 31.2775 37.2019 32.2272 36.8807 33.0583C36.5458 33.9175 36.0994 34.6465 35.3725 35.3728C34.6465 36.0996 33.9186 36.5472 33.0595 36.8809C32.2281 37.2041 31.2775 37.4243 29.8864 37.488C28.4926 37.5514 28.0486 37.5669 24.4996 37.5669C20.9512 37.5669 20.5061 37.5514 19.1123 37.488C17.7215 37.4243 16.7717 37.2041 15.9403 36.8809C15.0814 36.5472 14.3524 36.0996 13.6264 35.3728C12.8998 34.6465 12.4534 33.9175 12.1194 33.0581C11.7965 32.2272 11.5763 31.2777 11.5123 29.8867C11.4491 28.4929 11.4333 28.0489 11.4333 24.5001C11.4333 20.9514 11.4497 20.5058 11.512 19.112C11.5746 17.7215 11.7951 16.7717 12.1191 15.9406C12.4539 15.0814 12.9004 14.3524 13.6272 13.6261C14.3535 12.8995 15.0825 12.4531 15.9419 12.1193C16.7728 11.7962 17.7223 11.576 19.1134 11.5123Z" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.329 13.7874C23.5566 13.7871 23.8015 13.7872 24.0657 13.7873L24.5012 13.7874C27.9901 13.7874 28.4036 13.8 29.7813 13.8626C31.0553 13.9208 31.7468 14.1337 32.2074 14.3126C32.8172 14.5494 33.2519 14.8325 33.709 15.2899C34.1663 15.7472 34.4494 16.1828 34.6868 16.7925C34.8657 17.2526 35.0788 17.9441 35.1368 19.2181C35.1994 20.5955 35.213 21.0093 35.213 24.4965C35.213 27.9837 35.1994 28.3975 35.1368 29.775C35.0785 31.049 34.8657 31.7404 34.6868 32.2005C34.45 32.8103 34.1663 33.2445 33.709 33.7015C33.2516 34.1589 32.8174 34.442 32.2074 34.6788C31.7473 34.8585 31.0553 35.0708 29.7813 35.1291C28.4039 35.1917 27.9901 35.2053 24.5012 35.2053C21.0121 35.2053 20.5986 35.1917 19.2212 35.1291C17.9471 35.0703 17.2557 34.8574 16.7948 34.6785C16.185 34.4417 15.7495 34.1586 15.2921 33.7013C14.8348 33.2439 14.5517 32.8094 14.3143 32.1994C14.1355 31.7393 13.9223 31.0479 13.8643 29.7739C13.8017 28.3964 13.7892 27.9826 13.7892 24.4932C13.7892 21.0039 13.8017 20.5923 13.8643 19.2148C13.9226 17.9408 14.1355 17.2493 14.3143 16.7887C14.5511 16.1789 14.8348 15.7434 15.2921 15.286C15.7495 14.8287 16.185 14.5456 16.7948 14.3082C17.2554 14.1285 17.9471 13.9162 19.2212 13.8577C20.4266 13.8032 20.8937 13.7869 23.329 13.7842V13.7874ZM31.4761 15.9574C30.6104 15.9574 29.9081 16.659 29.9081 17.5249C29.9081 18.3906 30.6104 19.0929 31.4761 19.0929C32.3418 19.0929 33.0441 18.3906 33.0441 17.5249C33.0441 16.6592 32.3418 15.9569 31.4761 15.9569V15.9574ZM17.7908 24.5C17.7908 20.7943 20.7952 17.7898 24.5008 17.7896C28.2066 17.7896 31.2104 20.7942 31.2104 24.5C31.2104 28.2058 28.2069 31.209 24.5011 31.209C20.7953 31.209 17.7908 28.2058 17.7908 24.5Z" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.5012 20.1445C26.9066 20.1445 28.8568 22.0945 28.8568 24.5001C28.8568 26.9055 26.9066 28.8557 24.5012 28.8557C22.0956 28.8557 20.1456 26.9055 20.1456 24.5001C20.1456 22.0945 22.0956 20.1445 24.5012 20.1445V20.1445Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__center">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Наши работы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">О компании</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="services_2.html" class="footer__link">Услуги</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Цены</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Нас благодарят</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Полезные советы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__contacts">
+                            <a class="footer__phone" href="tel:+74957760058">+7 (495) 776-00-58</a>
+                            <a class="footer__email" href="mailto:ocean-vann@yandex.ru">ocean-vann@yandex.ru</a>
+                        </div>
+                        <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">Дизайн и верстка сайта - студия <a class="footer__studio"
+                        href="#">Битмодерн</a></div>
+            </div>
+        </footer>
+        <div class="popup popup-callback">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="close popup__close"></button>
+                        <div class="popup__header">
+                            <div class="popup__title">Закажите <span>бесплатный</span> выезд сметчика!</div>
+                        </div>
+                        <div class="popup__body">
+                            <form class="form">
+                                <div class="form__item">
+                                    <input class="form__input" type="text" name="name" placeholder="Введите имя">
+                                </div>
+                                <div class="form__item">
+                                    <input class="form__input" type="tel" name="tel" placeholder="Введите телефон">
+                                </div>
+                                <label class="checkbox">
+                                    <span class="checkbox__text">Согласен с обработкой моих персональных данных в
+                                        соответствии с <a href="#" class="checkbox__link">политикой
+                                            конфиденциальности.</a></span>
+                                    <input class="checkbox__input" type="checkbox" name="agree">
+                                    <span class="checkbox__custom"></span>
+                                </label>
+                                <button class="form__btn btn btn--blue" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar"></div>
+        <button class="scroll-top"></button>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
